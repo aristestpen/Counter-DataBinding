@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
@@ -13,8 +12,11 @@ import android.view.ViewGroup;
 
 import com.aries.courtcounter.R;
 import com.aries.courtcounter.databinding.FragmentCounterBinding;
-import com.aries.courtcounter.model.Score;
 import com.aries.courtcounter.viewModel.CounterViewModel;
+
+/*
+ * 30 Desember 2020
+ * */
 
 
 public class CounterFragment extends Fragment {

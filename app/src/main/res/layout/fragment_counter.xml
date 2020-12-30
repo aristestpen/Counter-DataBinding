@@ -15,13 +15,13 @@
         android:layout_height="match_parent">
 
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/scrollView2">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -35,8 +35,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="+ 2 points"
                     android:onClick="@{()->counterViewModel.addPointAway(2)}"
+                    android:text="+ 2 points"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline"
                     app:layout_constraintTop_toBottomOf="@+id/btnThreePointAway" />
@@ -97,8 +97,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="16dp"
-                    android:text="+ 3 points"
                     android:onClick="@{()->counterViewModel.addPointHome(3)}"
+                    android:text="+ 3 points"
                     app:layout_constraintEnd_toStartOf="@+id/guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtHomeScore" />
@@ -110,8 +110,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="+ 2 points"
                     android:onClick="@{()->counterViewModel.addPointHome(2)}"
+                    android:text="+ 2 points"
                     app:layout_constraintEnd_toStartOf="@+id/guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btnThreePointHome" />
@@ -123,8 +123,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Free Throw"
                     android:onClick="@{()->counterViewModel.addPointHome(1)}"
+                    android:text="Free Throw"
                     app:layout_constraintEnd_toStartOf="@+id/guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btnTwoPointHome" />
@@ -136,8 +136,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="16dp"
-                    android:text="+ 3 points"
                     android:onClick="@{()->counterViewModel.addPointAway(3)}"
+                    android:text="+ 3 points"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline"
                     app:layout_constraintTop_toBottomOf="@+id/txtScoreAway" />
@@ -149,8 +149,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Free Throw"
                     android:onClick="@{()->counterViewModel.addPointAway(1)}"
+                    android:text="Free Throw"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline"
                     app:layout_constraintTop_toBottomOf="@+id/btnTwoPointAway" />
@@ -162,8 +162,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="16dp"
-                    android:text="reset score"
                     android:onClick="@{()->counterViewModel.resetScore()}"
+                    android:text="reset score"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btnFreeThrowAway" />
