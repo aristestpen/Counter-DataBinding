@@ -19,7 +19,6 @@ import com.aries.courtcounter.viewModel.CounterViewModel;
 
 public class CounterFragment extends Fragment {
 
-    private Score score;
     private CounterViewModel viewModel;
 
     public CounterFragment() {
@@ -33,10 +32,6 @@ public class CounterFragment extends Fragment {
         viewModel = new ViewModelProvider(this).get(CounterViewModel.class);
         binding.setLifecycleOwner(this);
         binding.setCounterViewModel(viewModel);
-        viewModel.scoreMutableLiveData.observe(getViewLifecycleOwner(), score -> {
-            binding.txtHomeScore.setText(Integer.toString(score.getHomeScore()));
-            binding.txtScoreAway.setText(Integer.toString(score.getAwayScore()));
-        });
         return binding.getRoot();
 
     }

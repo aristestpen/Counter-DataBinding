@@ -5,6 +5,9 @@ public class Score {
     private int homeScore;
     private int awayScore;
 
+    public Score() {
+    }
+
     public Score(int homeScore, int awayScore) {
         this.homeScore = homeScore;
         this.awayScore = awayScore;
