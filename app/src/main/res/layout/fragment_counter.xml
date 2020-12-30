@@ -23,6 +23,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="+ 2 points"
+            android:onClick="@{()->counterViewModel.addPointAway(2)}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/btnThreePointAway" />
@@ -84,6 +85,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="+ 3 points"
+            android:onClick="@{()->counterViewModel.addPointHome(3)}"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtHomeScore" />
@@ -96,6 +98,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="+ 2 points"
+            android:onClick="@{()->counterViewModel.addPointHome(2)}"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnThreePointHome" />
@@ -108,6 +111,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="Free Throw"
+            android:onClick="@{()->counterViewModel.addPointHome(1)}"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnTwoPointHome" />
@@ -120,6 +124,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="+ 3 points"
+            android:onClick="@{()->counterViewModel.addPointAway(3)}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/txtScoreAway" />
@@ -132,6 +137,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="Free Throw"
+            android:onClick="@{()->counterViewModel.addPointAway(1)}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/btnTwoPointAway" />
