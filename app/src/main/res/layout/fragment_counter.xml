@@ -6,8 +6,8 @@
     <data>
 
         <variable
-            name="score"
-            type="com.aries.courtcounter.model.Score" />
+            name="counterViewModel"
+            type="com.aries.courtcounter.viewModel.CounterViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@{Integer.toString(score.homeScore)}"
+            android:text="@{Integer.toString(counterViewModel.score.homeScore)}"
             android:textSize="64sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@{Integer.toString(score.awayScore)}"
+            android:text="@{Integer.toString(counterViewModel.score.awayScore)}"
             android:textSize="64sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline"
